@@ -1,0 +1,96 @@
+{
+  "project_name": "FişOkut - Akıllı İrsaliye & Fiş OCR Tarayıcı",
+  "app_type": "mobile_web_app",
+  "locale": "tr-TR",
+  "theme": {
+    "default_mode": "dark",
+    "supported_modes": ["dark", "light"],
+    "accent_archetype": "ARCHETYPE 2: THE PERFORMANCE PRO & TACTICAL PRECISION",
+    "rationale": "High-contrast tactical dark theme optimized for field operational clarity, camera viewfinders, document scanners, and accurate optical number validation under varying lighting conditions."
+  },
+  "typography": {
+    "font_family_heading": "'Space Grotesk', 'Plus Jakarta Sans', sans-serif",
+    "font_family_body": "'Plus Jakarta Sans', sans-serif",
+    "font_family_mono": "'JetBrains Mono', 'IBM Plex Mono', monospace",
+    "scale": {
+      "h1": "text-2xl sm:text-3xl font-bold tracking-tight",
+      "h2": "text-xl sm:text-2xl font-bold tracking-tight",
+      "h3": "text-lg sm:text-xl font-semibold",
+      "h4": "text-base font-semibold",
+      "body": "text-sm sm:text-base leading-relaxed",
+      "caption": "text-xs font-medium uppercase tracking-wider text-muted-foreground",
+      "numeric_highlight": "font-mono font-bold text-amber-400 bg-amber-500/10 px-1.5 py-0.5 rounded border border-amber-500/30"
+    }
+  },
+  "colors": {
+    "background": {
+      "dark": "oklch(0.12 0.015 250)",
+      "light": "oklch(0.98 0.005 250)"
+    },
+    "surface": {
+      "dark": "oklch(0.17 0.018 250)",
+      "light": "oklch(0.95 0.008 250)"
+    },
+    "primary": {
+      "main": "oklch(0.68 0.22 142)",
+      "hover": "oklch(0.75 0.24 142)",
+      "label": "Taktik Yeşil (Emerald Scan)"
+    },
+    "warning_low_confidence": {
+      "main": "oklch(0.78 0.18 75)",
+      "bg": "rgba(245, 158, 11, 0.12)",
+      "border": "rgba(245, 158, 11, 0.4)",
+      "label": "1050 Doğrulama Uyarısı (Amber Alert)"
+    },
+    "destructive": {
+      "main": "oklch(0.62 0.22 25)",
+      "bg": "rgba(239, 68, 68, 0.12)"
+    },
+    "ocr_bounding_box": {
+      "verified": "#10B981",
+      "unclear_1050": "#F59E0B",
+      "active_selected": "#3B82F6"
+    }
+  },
+  "key_features_and_flows": [
+    {
+      "name": "Mobil Kamera & Galeri Yükleme",
+      "description": "Mobil görünüm odaklı canlı kamera simülasyonu, kılavuz çizgi kadrajı, flaş açma/kapama, galeri dosya seçimi ve örnek Türkçe el yazısı irsaliye belgeleri (Örn: '1050' miktar/fiyat içeren sipariş fişi)."
+    },
+    {
+      "name": "Belge İşleme & Önizleme Editörü",
+      "description": "Kırpma (crop) tutamaçları, 90 derece döndürme, Parlaklık/Zıtlık (High Contrast) filtresi, El yazısı mürekkep netleştirme modu ve Yeniden Çek butonu."
+    },
+    {
+      "name": "Akıllı OCR Metin & Özel 1050 Doğrulama Katmanı",
+      "description": "Belge üzerindeki tespit edilen metin bloklarının interaktif bounding-box görselleştirmesi. Düşük güvenilirlikli '1050' (el yazısı '1050' / '105' / 'IOSO' karışıklıkları) için otomatik tespit uyarısı ve hızlı matematiksel doğrulama paneli."
+    },
+    {
+      "name": "Yapılandırılmış Tablo & Satır Düzenleme Paneli",
+      "description": "Tedarikçi adı, Belge Tarihi, Fiş No, Ürün Satırları (Miktar x Birim Fiyat = Toplam). '1050' değerini içeren satırın anında manuel düzeltilmesi, toplam tutar tutarlılık kontrolü ve satır ekleme/silme."
+    },
+    {
+      "name": "Dışa Aktarma & Onay Flow",
+      "description": "JSON ve CSV formatında indirme, Panoya Kopyalama, Doğrulanmış Kaydetme geçmişi paneli."
+    }
+  ],
+  "image_urls": {
+    "sample_receipt_1": "https://images.unsplash.com/photo-1545941962-1b6654eb8072?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwxfHxyZWNlaXB0JTIwcGFwZXIlMjBpbnZvaWNlJTIwZGVsaXZlcnklMjBub3RlJTIwZG9jdW1lbnQlMjBjYW1lcmElMjBzY2FufGVufDB8fHx8MTc5MTcwOTgzNHww&ixlib=rb-4.1.0&q=85",
+    "sample_receipt_2": "https://images.unsplash.com/photo-1623123096729-26b481292919?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHw0fHxyZWNlaXB0JTIwcGFwZXIlMjBpbnZvaWNlJTIwZGVsaXZlcnklMjBub3RlJTIwZG9jdW1lbnQlMjBjYW1lcmElMjBzY2FufGVufDB8fHx8MTc5MTcwOTgzNHww&ixlib=rb-4.1.0&q=85",
+    "sample_receipt_3": "https://images.unsplash.com/photo-1648823161626-0e839927401b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwzfHxyZWNlaXB0JTIwcGFwZXIlMjBpbnZvaWNlJTIwZGVsaXZlcnklMjBub3RlJTIwZG9jdW1lbnQlMjBjYW1lcmElMjBzY2FufGVufDB8fHx8MTc5MTcwOTgzNHww&ixlib=rb-4.1.0&q=85"
+  },
+  "instructions_to_main_agent": [
+    "Türkçe dil desteğini %100 eksiksiz ve doğal ifadelerle kullanın ('Fiş Okut', 'İrsaliye Taraması', '1050 Sayısal Doğrulama', 'Düşük Güvenlikli Alan', 'Satır Düzenle', 'CSV Dışa Aktar').",
+    "Mobil kullanıcı deneyimine odaklanın: Alt gezinti barı (Bottom Nav), dokunmatik alanlar (min 44px height), kolay başparmak etkileşimleri.",
+    "Kullanıcının ilettiği soruna özel vurgu yapın: Fiş veya irsaliyelerdeki el yazısı '1050' değerinin OCR tarafından '105' veya eksik/yanlış okunmasını otomatik yakalayan bir '1050 Sayısal Kontrol Paneli' inşa edin.",
+    "Tüm etkileşimli elemanlara, girdi alanlarına, butonlara ve tablo hücrelerine 'data-testid' özniteliği ekleyin (Örn: data-testid='camera-scan-button', data-testid='input-field-1050', data-testid='export-csv-button').",
+    "Geçerli .js / .jsx vite yapısını takip edin.",
+    "Mobil tarayıcı kadraj simülasyonu için 'framing guides', 'level bar' ve 'contrast filter toggles' ekleyin."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": {
+    "data_testid_rule": "MUST add data-testid to all interactive components, buttons, inputs, tabs, export actions, and table cells.",
+    "theme_rule": "Maintain crisp dark mode tactical document scanner aesthetic with emerald green highlights and amber 1050 warning badges.",
+    "toast_rule": "Use sonner toast notifications for export success, edit saved, and OCR calculation verification events.",
+    "accessibility": "High contrast ratios, visible focus indicators, screen-reader friendly Turkish aria labels."
+  }
+}

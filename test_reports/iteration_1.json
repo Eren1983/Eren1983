@@ -1,0 +1,54 @@
+{
+  "passed": 6,
+  "failed": 0,
+  "flaky": 0,
+  "blocked": 0,
+  "test_error": 0,
+  "bugs": [],
+  "action_items": [],
+  "retest_needed": false,
+  "checks": [
+    {
+      "criterion": "Mobil tarama ekranı açılır ve kamera, galeri ve örnek belge seçenekleri görünür",
+      "name": "mobile-capture-shell",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "localhost:3000 mobile 390x844 rendered scanner-page; camera-scan-button, gallery-upload-button, sample-document-button, document-preview-image and capture-workspace were visible."
+    },
+    {
+      "criterion": "Kamera/galeri seçimi ve belge önizleme akışı kullanılabilir",
+      "name": "capture-controls-preview",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "rotate, crop, crop apply, contrast, and rescan controls responded; camera-file-input had image/* and capture=environment; no console errors."
+    },
+    {
+      "criterion": "OCR sonucu tam metin ve yapılandırılmış satır alanlarıyla açılır",
+      "name": "ocr-review-editable-fields",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "continue-to-review-button opened editable full-text, supplier/date, and product/quantity/unit/unit-price/total fields; full text accepted an edit."
+    },
+    {
+      "criterion": "1050 düşük güven uyarısı görünür ve doğrulama düzeltmeyi korur",
+      "name": "low-confidence-1050-verification",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "numeric-validation-card showed low-confidence copy for 1050; verify-1050-button changed to Değer doğrulandı and both price and total remained 1050."
+    },
+    {
+      "criterion": "Kullanıcı onaylamadan dışa aktarma tamamlanmaz",
+      "name": "approval-gates-exports",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "JSON/CSV/copy were disabled before approval; after 1050 verification and approval, approval-title became Belge onaylandı and all export controls enabled."
+    },
+    {
+      "criterion": "Onay sonrası dışa aktarma ve düzenleme güvenilir çalışır",
+      "name": "approved-export-edit-flow",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Public preview https://fis-tarayici.preview.emergentagent.com accepted edited full text; JSON and CSV downloads completed with expected filenames and copy feedback appeared; console_errors was empty."
+    }
+  ]
+}
